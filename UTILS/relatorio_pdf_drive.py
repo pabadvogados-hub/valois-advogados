@@ -23,7 +23,7 @@ import argparse
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.insert(0, os.path.join(ROOT, 'INTEGRACOES'))
 
-TEMP = os.path.join(os.environ.get('TEMP', '/tmp'), 'mpd_relatorios')
+TEMP = os.path.join(os.environ.get('TEMP', '/tmp'), 'valois_relatorios')
 
 CHROME_PATHS = [
     r"C:/Program Files/Google/Chrome/Application/chrome.exe",

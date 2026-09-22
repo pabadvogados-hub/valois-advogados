@@ -24,229 +24,229 @@ RAIZ = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SAIDA = os.path.join(RAIZ, 'SAIDA')
 
 ESCRITORIO = 'Welington Valois Advogados Associados'
-ENDERECO = 'Rua Galaor Rios, 289, Centro - Iuna/ES  |  Ibatiba/ES  |  Irupi/ES'
+ENDERECO = 'Rua Galaor Rios, 289, Centro - Iúna/ES  |  Ibatiba/ES  |  Irupi/ES'
 CONTATO = 'WhatsApp e telefone: (28) 99981-5672  |  welingtonvaloisadv@gmail.com'
 
 AVISO_INTIMACAO = (
-    'Durante todo o processo o juiz vai dando ordens (os despachos) e o cartorio vai avisando '
-    'o advogado de cada passo (as intimacoes). Isso acontece do comeco ao fim, entre uma fase '
-    'e outra. Voce nao precisa acompanhar nada disso: quem acompanha e o seu advogado, e todo '
-    'mes voce recebe o relatorio dizendo em que fase o seu processo esta.'
+    'Durante todo o processo o juiz vai dando ordens (os despachos) e o cartório vai avisando '
+    'o advogado de cada passo (as intimações). Isso acontece do começo ao fim, entre uma fase '
+    'e outra. Você não precisa acompanhar nada disso: quem acompanha é o seu advogado, e todo '
+    'mês você recebe o relatório dizendo em que fase o seu processo está.'
 )
 
 AREAS = {
     'previdenciario': {
-        'titulo': 'Aposentadoria e beneficios do INSS',
-        'subtitulo': 'O caminho do seu pedido, do comeco ao fim',
+        'titulo': 'Aposentadoria e benefícios do INSS',
+        'subtitulo': 'O caminho do seu pedido, do começo ao fim',
         'responsavel': 'Dra. Priscila Araujo de Matos - OAB/ES 39.600',
         'fases': [
             ('Conversa e documentos',
-             'Voce conta a sua historia e nos separamos os documentos: identidade, CPF, '
-             'comprovante de residencia, documentos do trabalho e, se for o caso, os laudos '
-             'e receitas do medico.'),
+             'Você conta a sua história e nós separamos os documentos: identidade, CPF, '
+             'comprovante de residência, documentos do trabalho e, se for o caso, os laudos '
+             'e receitas do médico.'),
             ('Pedido no INSS',
-             'Primeiro o pedido e feito no proprio INSS. Essa e a fase administrativa. '
-             'Sem passar por aqui, na maioria dos casos nao da para entrar na Justica.'),
-            ('Pericia medica do INSS',
-             'Se o seu beneficio depende de doenca ou incapacidade, o INSS marca uma pericia. '
-             'Um medico do INSS examina voce e diz se concorda que voce esta incapacitado. '
-             'E obrigatorio comparecer no dia marcado.'),
-            ('Avaliacao social do INSS',
-             'Em alguns beneficios, alem do medico, uma assistente social do INSS avalia como '
-             'voce vive e quanto a sua familia ganha.'),
+             'Primeiro o pedido é feito no próprio INSS. Essa é a fase administrativa. '
+             'Sem passar por aqui, na maioria dos casos não dá para entrar na Justiça.'),
+            ('Perícia médica do INSS',
+             'Se o seu benefício depende de doença ou incapacidade, o INSS marca uma perícia. '
+             'Um médico do INSS examina você e diz se concorda que você está incapacitado. '
+             'É obrigatório comparecer no dia marcado.'),
+            ('Avaliação social do INSS',
+             'Em alguns benefícios, além do médico, uma assistente social do INSS avalia como '
+             'você vive e quanto a sua família ganha.'),
             ('Resposta do INSS',
-             'O INSS responde: aceita o pedido e comeca a pagar, ou nega. Se negar, ou se demorar '
-             'demais, nos levamos o caso para a Justica.'),
-            ('Entrada da acao na Justica',
-             'Escrevemos a peticao inicial, que e o documento em que contamos o seu caso ao juiz '
-             'e pedimos o beneficio. A acao entra aqui mesmo, no forum da comarca da regiao - '
-             'voce nao precisa viajar para a Justica Federal.'),
+             'O INSS responde: aceita o pedido e começa a pagar, ou nega. Se negar, ou se demorar '
+             'demais, nós levamos o caso para a Justiça.'),
+            ('Entrada da ação na Justiça',
+             'Escrevemos a petição inicial, que é o documento em que contamos o seu caso ao juiz '
+             'e pedimos o benefício. A ação entra aqui mesmo, no fórum da comarca da região - '
+             'você não precisa viajar para a Justiça Federal.'),
             ('O INSS se defende',
-             'O INSS apresenta a contestacao, que e a defesa dele. Ele diz ao juiz por que acha '
-             'que voce nao tem direito.'),
+             'O INSS apresenta a contestação, que é a defesa dele. Ele diz ao juiz por que acha '
+             'que você não tem direito.'),
             ('Nossa resposta',
-             'A replica e a nossa resposta a defesa do INSS. Aqui nos derrubamos, um por um, os '
-             'argumentos que o INSS usou contra voce.'),
-            ('Pericia medica do juiz',
-             'Se o caso envolve doenca, o juiz escolhe um medico de confianca dele para examinar '
-             'voce de novo. Esse medico nao trabalha para o INSS nem para nos. O dia e o lugar sao '
-             'avisados com antecedencia.'),
+             'A réplica é a nossa resposta à defesa do INSS. Aqui nós derrubamos, um por um, os '
+             'argumentos que o INSS usou contra você.'),
+            ('Perícia médica do juiz',
+             'Se o caso envolve doença, o juiz escolhe um médico de confiança dele para examinar '
+             'você de novo. Esse médico não trabalha para o INSS nem para nós. O dia e o lugar são '
+             'avisados com antecedência.'),
             ('Estudo social',
-             'Uma assistente social escolhida pelo juiz vai ate a sua casa ou propriedade para ver '
-             'como a familia vive e trabalha. Muito comum nos casos de trabalhador rural e de '
-             'beneficio para quem tem pouca renda.'),
-            ('Audiencia',
-             'E o dia em que voce e as suas testemunhas falam com o juiz. Na audiencia de instrucao '
+             'Uma assistente social escolhida pelo juiz vai até a sua casa ou propriedade para ver '
+             'como a família vive e trabalha. Muito comum nos casos de trabalhador rural e de '
+             'benefício para quem tem pouca renda.'),
+            ('Audiência',
+             'É o dia em que você e as suas testemunhas falam com o juiz. Na audiência de instrução '
              'e julgamento as testemunhas contam o que sabem do seu trabalho e da sua vida. '
-             'Voce sera avisado com antecedencia e nos preparamos tudo com voce antes.'),
-            ('Ultimas palavras das partes',
-             'As alegacoes finais sao o resumo que cada lado escreve no fim, juntando tudo o que '
-             'ficou provado. E a nossa ultima palavra antes da decisao.'),
-            ('Sentenca',
-             'E a decisao do juiz. Ele diz se voce tem direito ao beneficio e a partir de quando.'),
+             'Você será avisado com antecedência e nós preparamos tudo com você antes.'),
+            ('Últimas palavras das partes',
+             'As alegações finais são o resumo que cada lado escreve no fim, juntando tudo o que '
+             'ficou provado. É a nossa última palavra antes da decisão.'),
+            ('Sentença',
+             'É a decisão do juiz. Ele diz se você tem direito ao benefício e a partir de quando.'),
             ('Recurso',
-             'Se qualquer um dos lados nao concordar com a decisao, o caso sobe para a Justica '
-             'Federal, que revisa a sentenca. Essa etapa nem sempre acontece.'),
-            ('Beneficio pago',
-             'Ganhando em definitivo, o INSS e obrigado a comecar a pagar o beneficio e a pagar '
-             'tambem o que ficou atrasado desde a data reconhecida pelo juiz.'),
+             'Se qualquer um dos lados não concordar com a decisão, o caso sobe para a Justiça '
+             'Federal, que revisa a sentença. Essa etapa nem sempre acontece.'),
+            ('Benefício pago',
+             'Ganhando em definitivo, o INSS é obrigado a começar a pagar o benefício e a pagar '
+             'também o que ficou atrasado desde a data reconhecida pelo juiz.'),
         ],
     },
     'criminal': {
         'titulo': 'Processo criminal',
-        'subtitulo': 'O caminho da sua defesa, do comeco ao fim',
+        'subtitulo': 'O caminho da sua defesa, do começo ao fim',
         'responsavel': 'Dr. Welington Dias Valois - OAB/ES 34.912  |  '
                        'Dr. Guilherme Mota Lopes Costa - OAB/ES 44.599',
         'fases': [
             ('Conversa e documentos',
-             'Voce conta o que aconteceu e nos reunimos tudo o que ajuda a sua defesa: documentos, '
+             'Você conta o que aconteceu e nós reunimos tudo o que ajuda a sua defesa: documentos, '
              'mensagens, nomes de pessoas que podem servir de testemunha.'),
-            ('Investigacao',
-             'A policia investiga e reune o que encontrou no inquerito policial. Nesta fase ainda '
-             'nao ha acusacao formal. Se voce for chamado para depor, nos vamos junto.'),
-            ('Acusacao',
-             'O Ministerio Publico analisa a investigacao e decide: arquiva o caso ou apresenta a '
-             'denuncia, que e a acusacao formal contra voce.'),
-            ('O juiz decide se aceita a acusacao',
-             'O juiz le a denuncia e decide se o processo comeca ou nao.'),
+            ('Investigação',
+             'A polícia investiga e reúne o que encontrou no inquérito policial. Nesta fase ainda '
+             'não há acusação formal. Se você for chamado para depor, nós vamos junto.'),
+            ('Acusação',
+             'O Ministério Público analisa a investigação e decide: arquiva o caso ou apresenta a '
+             'denúncia, que é a acusação formal contra você.'),
+            ('O juiz decide se aceita a acusação',
+             'O juiz lê a denúncia e decide se o processo começa ou não.'),
             ('Nossa defesa escrita',
-             'Apresentamos a resposta a acusacao: e o documento em que mostramos ao juiz o outro '
-             'lado da historia e indicamos as nossas testemunhas.'),
-            ('Audiencia',
-             'E o dia principal. Na audiencia de instrucao e julgamento as testemunhas sao ouvidas '
-             'e, no fim, o juiz ouve voce. Nos preparamos tudo com voce antes.'),
-            ('Ultimas palavras das partes',
-             'Nas alegacoes finais cada lado escreve o resumo do que ficou provado. E a nossa ultima '
-             'palavra antes da decisao.'),
-            ('Sentenca',
-             'E a decisao do juiz: absolvicao ou condenacao. Estando condenado, a sentenca diz qual '
-             'e a pena e como ela sera cumprida.'),
+             'Apresentamos a resposta à acusação: é o documento em que mostramos ao juiz o outro '
+             'lado da história e indicamos as nossas testemunhas.'),
+            ('Audiência',
+             'É o dia principal. Na audiência de instrução e julgamento as testemunhas são ouvidas '
+             'e, no fim, o juiz ouve você. Nós preparamos tudo com você antes.'),
+            ('Últimas palavras das partes',
+             'Nas alegações finais cada lado escreve o resumo do que ficou provado. É a nossa última '
+             'palavra antes da decisão.'),
+            ('Sentença',
+             'É a decisão do juiz: absolvição ou condenação. Estando condenado, a sentença diz qual '
+             'é a pena e como ela será cumprida.'),
             ('Recurso',
-             'Se a decisao nao for favoravel, recorremos ao tribunal, que revisa a sentenca. '
-             'A acusacao tambem pode recorrer.'),
+             'Se a decisão não for favorável, recorremos ao tribunal, que revisa a sentença. '
+             'A acusação também pode recorrer.'),
             ('Fim do processo',
-             'Quando nao cabe mais recurso, o processo termina. Havendo condenacao, comeca a fase '
-             'de cumprimento da pena, que continua sendo acompanhada por nos.'),
+             'Quando não cabe mais recurso, o processo termina. Havendo condenação, começa a fase '
+             'de cumprimento da pena, que continua sendo acompanhada por nós.'),
         ],
     },
     'familia': {
-        'titulo': 'Familia e heranca',
-        'subtitulo': 'O caminho do seu processo, do comeco ao fim',
+        'titulo': 'Família e herança',
+        'subtitulo': 'O caminho do seu processo, do começo ao fim',
         'responsavel': 'Dra. Derlira Garcia Pimentel Soares - OAB/ES 27.296',
         'fases': [
             ('Conversa e documentos',
-             'Voce conta a sua situacao e nos separamos os documentos: certidoes, documentos dos '
+             'Você conta a sua situação e nós separamos os documentos: certidões, documentos dos '
              'bens, comprovantes de despesa e de renda.'),
             ('Tentativa de acordo',
-             'Sempre que for possivel e seguro para voce, tentamos resolver por acordo. Acordo e '
-             'mais rapido, mais barato e menos desgastante.'),
-            ('Entrada da acao',
-             'Nao havendo acordo, escrevemos a peticao inicial, que e o documento em que contamos '
-             'o seu caso ao juiz e dizemos o que voce esta pedindo.'),
-            ('Audiencia de conciliacao',
+             'Sempre que for possível e seguro para você, tentamos resolver por acordo. Acordo é '
+             'mais rápido, mais barato e menos desgastante.'),
+            ('Entrada da ação',
+             'Não havendo acordo, escrevemos a petição inicial, que é o documento em que contamos '
+             'o seu caso ao juiz e dizemos o que você está pedindo.'),
+            ('Audiência de conciliação',
              'O juiz chama os dois lados para uma nova tentativa de acordo, com a ajuda de uma '
              'pessoa preparada para isso. Se houver acordo aqui, o processo termina cedo.'),
             ('O outro lado se defende',
-             'A outra parte apresenta a contestacao, que e a defesa dela, dizendo ao juiz por que '
+             'A outra parte apresenta a contestação, que é a defesa dela, dizendo ao juiz por que '
              'discorda do seu pedido.'),
             ('Nossa resposta',
-             'A replica e a nossa resposta a defesa da outra parte. Rebatemos ponto a ponto o que '
-             'foi alegado contra voce.'),
-            ('Producao de provas',
+             'A réplica é a nossa resposta à defesa da outra parte. Rebatemos ponto a ponto o que '
+             'foi alegado contra você.'),
+            ('Produção de provas',
              'Juntamos os documentos e, quando o caso pede, o juiz determina estudo social, '
-             'avaliacao psicologica ou avaliacao dos bens.'),
-            ('Audiencia',
-             'Na audiencia de instrucao e julgamento voce e as suas testemunhas falam com o juiz. '
-             'Voce e avisado com antecedencia e nos preparamos tudo com voce antes.'),
-            ('Ultimas palavras das partes',
-             'Nas alegacoes finais cada lado escreve o resumo do que ficou provado. E a nossa ultima '
-             'palavra antes da decisao.'),
-            ('Sentenca',
-             'E a decisao do juiz sobre o que foi pedido: divorcio, guarda, pensao, partilha, '
-             'heranca.'),
+             'avaliação psicológica ou avaliação dos bens.'),
+            ('Audiência',
+             'Na audiência de instrução e julgamento você e as suas testemunhas falam com o juiz. '
+             'Você é avisado com antecedência e nós preparamos tudo com você antes.'),
+            ('Últimas palavras das partes',
+             'Nas alegações finais cada lado escreve o resumo do que ficou provado. É a nossa última '
+             'palavra antes da decisão.'),
+            ('Sentença',
+             'É a decisão do juiz sobre o que foi pedido: divórcio, guarda, pensão, partilha, '
+             'herança.'),
             ('Recurso',
-             'Se algum dos lados nao concordar, o caso sobe para o tribunal, que revisa a decisao. '
+             'Se algum dos lados não concordar, o caso sobe para o tribunal, que revisa a decisão. '
              'Essa etapa nem sempre acontece.'),
-            ('Cumprimento da decisao',
-             'Com a decisao definitiva, cuidamos de fazer valer o que foi decidido: averbacao no '
-             'cartorio, transferencia dos bens, pagamento da pensao.'),
+            ('Cumprimento da decisão',
+             'Com a decisão definitiva, cuidamos de fazer valer o que foi decidido: averbação no '
+             'cartório, transferência dos bens, pagamento da pensão.'),
         ],
     },
     'bancario': {
         'titulo': 'Problema com banco ou financiamento',
-        'subtitulo': 'O caminho do seu processo, do comeco ao fim',
-        'responsavel': 'Dr. Heliezer de Medeiros Pontes - OAB/ES 38.904',
+        'subtitulo': 'O caminho do seu processo, do começo ao fim',
+        'responsavel': 'Dr. Heliézer de Medeiros Pontes - OAB/ES 38.904',
         'fases': [
             ('Conversa e documentos',
-             'Voce conta o que esta acontecendo e nos separamos os documentos: contrato, carne, '
-             'extratos, comprovantes de pagamento e as cobrancas que voce recebeu.'),
-            ('Analise do contrato',
-             'Estudamos o seu contrato e as contas para descobrir o que esta sendo cobrado a mais '
-             'e o que da para discutir na Justica. Aqui nos dizemos com sinceridade se vale a pena.'),
-            ('Tentativa de solucao direta',
+             'Você conta o que está acontecendo e nós separamos os documentos: contrato, carnê, '
+             'extratos, comprovantes de pagamento e as cobranças que você recebeu.'),
+            ('Análise do contrato',
+             'Estudamos o seu contrato e as contas para descobrir o que está sendo cobrado a mais '
+             'e o que dá para discutir na Justiça. Aqui nós dizemos com sinceridade se vale a pena.'),
+            ('Tentativa de solução direta',
              'Quando for o caso, procuramos o banco antes de processar, para tentar resolver sem '
-             'acao judicial.'),
-            ('Entrada da acao',
-             'Nao havendo solucao, escrevemos a peticao inicial, que e o documento em que contamos '
-             'o seu caso ao juiz e dizemos o que voce esta pedindo.'),
+             'ação judicial.'),
+            ('Entrada da ação',
+             'Não havendo solução, escrevemos a petição inicial, que é o documento em que contamos '
+             'o seu caso ao juiz e dizemos o que você está pedindo.'),
             ('O banco se defende',
-             'O banco apresenta a contestacao, que e a defesa dele, com os motivos pelos quais '
-             'acha que a cobranca esta correta.'),
+             'O banco apresenta a contestação, que é a defesa dele, com os motivos pelos quais '
+             'acha que a cobrança está correta.'),
             ('Nossa resposta',
-             'A replica e a nossa resposta a defesa do banco. Rebatemos ponto a ponto o que ele '
-             'alegou contra voce.'),
-            ('Pericia nas contas',
+             'A réplica é a nossa resposta à defesa do banco. Rebatemos ponto a ponto o que ele '
+             'alegou contra você.'),
+            ('Perícia nas contas',
              'Quando o caso exige, o juiz nomeia um perito - um profissional que entende de '
-             'calculo - para refazer as contas do contrato e dizer quanto foi cobrado a mais.'),
-            ('Audiencia',
-             'Nem todo processo de banco tem audiencia. Quando houver, voce e avisado com '
-             'antecedencia e nos preparamos tudo com voce antes.'),
-            ('Sentenca',
-             'E a decisao do juiz: ele diz se a cobranca do banco estava errada e o que precisa '
+             'cálculo - para refazer as contas do contrato e dizer quanto foi cobrado a mais.'),
+            ('Audiência',
+             'Nem todo processo de banco tem audiência. Quando houver, você é avisado com '
+             'antecedência e nós preparamos tudo com você antes.'),
+            ('Sentença',
+             'É a decisão do juiz: ele diz se a cobrança do banco estava errada e o que precisa '
              'ser corrigido ou devolvido.'),
             ('Recurso',
              'Bancos costumam recorrer. Nesse caso o processo sobe para o tribunal, que revisa a '
-             'decisao.'),
-            ('Cumprimento da decisao',
-             'Com a decisao definitiva, cuidamos de fazer valer o resultado: correcao da divida, '
-             'devolucao do que foi pago a mais, retirada do seu nome dos cadastros.'),
+             'decisão.'),
+            ('Cumprimento da decisão',
+             'Com a decisão definitiva, cuidamos de fazer valer o resultado: correção da dívida, '
+             'devolução do que foi pago a mais, retirada do seu nome dos cadastros.'),
         ],
     },
     'civel': {
-        'titulo': 'Direito do consumidor e causas civeis',
-        'subtitulo': 'O caminho do seu processo, do comeco ao fim',
-        'responsavel': 'Dra. Gisele Teofilo de Avila - OAB/ES 23.868',
+        'titulo': 'Direito do consumidor e causas cíveis',
+        'subtitulo': 'O caminho do seu processo, do começo ao fim',
+        'responsavel': 'Dra. Gisele Teófilo de Avila - OAB/ES 23.868',
         'fases': [
             ('Conversa e documentos',
-             'Voce conta o que aconteceu e nos separamos as provas: nota fiscal, contrato, fotos, '
+             'Você conta o que aconteceu e nós separamos as provas: nota fiscal, contrato, fotos, '
              'mensagens, protocolos de atendimento e comprovantes de pagamento.'),
-            ('Reclamacao antes da acao',
-             'Quando for o caso, registramos reclamacao na empresa, no orgao de defesa do consumidor '
-             'ou enviamos uma notificacao, para tentar resolver sem processo.'),
-            ('Entrada da acao',
-             'Nao resolvendo, escrevemos a peticao inicial, que e o documento em que contamos o seu '
-             'caso ao juiz e dizemos o que voce esta pedindo.'),
-            ('Audiencia de conciliacao',
+            ('Reclamação antes da ação',
+             'Quando for o caso, registramos reclamação na empresa, no órgão de defesa do consumidor '
+             'ou enviamos uma notificação, para tentar resolver sem processo.'),
+            ('Entrada da ação',
+             'Não resolvendo, escrevemos a petição inicial, que é o documento em que contamos o seu '
+             'caso ao juiz e dizemos o que você está pedindo.'),
+            ('Audiência de conciliação',
              'O juiz chama os dois lados para tentar um acordo. Se houver acordo aqui, o processo '
-             'termina cedo e voce recebe mais rapido.'),
+             'termina cedo e você recebe mais rápido.'),
             ('A outra parte se defende',
-             'A empresa ou a pessoa processada apresenta a contestacao, que e a defesa dela.'),
+             'A empresa ou a pessoa processada apresenta a contestação, que é a defesa dela.'),
             ('Nossa resposta',
-             'A replica e a nossa resposta a defesa do outro lado. Rebatemos ponto a ponto o que '
-             'foi alegado contra voce.'),
-            ('Producao de provas',
-             'Juntamos os documentos e, quando o caso pede, o juiz determina pericia ou vistoria.'),
-            ('Audiencia',
-             'Na audiencia de instrucao e julgamento voce e as suas testemunhas falam com o juiz. '
-             'Voce e avisado com antecedencia e nos preparamos tudo com voce antes.'),
-            ('Sentenca',
-             'E a decisao do juiz sobre o que foi pedido: devolucao do dinheiro, conserto, '
-             'cancelamento da cobranca, indenizacao.'),
+             'A réplica é a nossa resposta à defesa do outro lado. Rebatemos ponto a ponto o que '
+             'foi alegado contra você.'),
+            ('Produção de provas',
+             'Juntamos os documentos e, quando o caso pede, o juiz determina perícia ou vistoria.'),
+            ('Audiência',
+             'Na audiência de instrução e julgamento você e as suas testemunhas falam com o juiz. '
+             'Você é avisado com antecedência e nós preparamos tudo com você antes.'),
+            ('Sentença',
+             'É a decisão do juiz sobre o que foi pedido: devolução do dinheiro, conserto, '
+             'cancelamento da cobrança, indenização.'),
             ('Recurso',
-             'Se algum dos lados nao concordar, o caso sobe para o tribunal, que revisa a decisao. '
+             'Se algum dos lados não concordar, o caso sobe para o tribunal, que revisa a decisão. '
              'Essa etapa nem sempre acontece.'),
             ('Recebimento',
-             'Com a decisao definitiva, cobramos o cumprimento: o pagamento a voce ou a obrigacao '
+             'Com a decisão definitiva, cobramos o cumprimento: o pagamento a você ou a obrigação '
              'que foi determinada.'),
         ],
     },
@@ -282,7 +282,7 @@ h1 { font-size: 21pt; margin: 3mm 0 1mm 0; color: #1b3a5c; line-height: 1.15; }
 .campo .traco { border-bottom: 1.5px solid #1b1b1b; height: 8mm; }
 ol.fases { list-style: none; margin: 0; padding: 0; }
 ol.fases li {
-  position: relative; padding: 0 0 6mm 20mm; break-inside: avoid; page-break-inside: avoid;
+  position: relative; padding: 0 12mm 6mm 20mm; break-inside: avoid; page-break-inside: avoid;
 }
 ol.fases li::before {
   content: attr(data-n);
@@ -317,22 +317,7 @@ ol.fases li:last-child::after { display: none; }
 @media print { body { font-size: 11.5pt; } .folha { padding: 0; } }
 """
 
-
-def _fase_html(indice, nome, texto):
-    return (
-        '      <li data-n="{n}">\n'
-        '        <span class="marcador"></span>\n'
-        '        <p class="fase-nome">{nome}</p>\n'
-        '        <p class="fase-texto">{texto}</p>\n'
-        '      </li>'
-    ).format(n=indice, nome=html.escape(nome), texto=html.escape(texto))
-
-
-def montar_html(chave, area):
-    fases = '\n'.join(
-        _fase_html(i, nome, texto) for i, (nome, texto) in enumerate(area['fases'], start=1)
-    )
-    return """<!DOCTYPE html>
+MODELO = """<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
 <meta charset="utf-8">
@@ -348,18 +333,19 @@ def montar_html(chave, area):
     </div>
 
     <div class="abertura">
-      Este papel e seu. <strong>Leve para casa e guarde.</strong> Ele mostra, em ordem, por onde o seu
-      processo passa do comeco ao fim. Um processo demora, e isso e normal: cada etapa tem o seu tempo.
-      Voce nao precisa acompanhar nada sozinho. <strong>Todo mes nos enviamos um relatorio e um audio</strong>
-      dizendo em que fase o seu processo esta e qual e o proximo passo.
+      Este papel &eacute; seu. <strong>Leve para casa e guarde.</strong> Ele mostra, em ordem, por onde o seu
+      processo passa do come&ccedil;o ao fim. Um processo demora, e isso &eacute; normal: cada etapa tem o seu
+      tempo. Voc&ecirc; n&atilde;o precisa acompanhar nada sozinho.
+      <strong>Todo m&ecirc;s n&oacute;s enviamos um relat&oacute;rio e um &aacute;udio</strong> dizendo em que
+      fase o seu processo est&aacute; e qual &eacute; o pr&oacute;ximo passo.
     </div>
 
     <div class="hoje">
-      <div class="hoje-titulo">Onde o seu processo esta hoje</div>
-      <p class="hoje-texto">Seu advogado marca abaixo, e tambem no quadradinho da fase, onde voce esta agora.</p>
+      <div class="hoje-titulo">Onde o seu processo est&aacute; hoje</div>
+      <p class="hoje-texto">Seu advogado marca abaixo, e tamb&eacute;m no quadradinho da fase, onde voc&ecirc; est&aacute; agora.</p>
       <div class="linha-preencher">
         <div class="campo">
-          <div class="rotulo">Fase numero</div>
+          <div class="rotulo">Fase n&uacute;mero</div>
           <div class="traco"></div>
         </div>
         <div class="campo">
@@ -369,13 +355,13 @@ def montar_html(chave, area):
       </div>
       <div class="linha-preencher">
         <div class="campo">
-          <div class="rotulo">Proximo passo</div>
+          <div class="rotulo">Pr&oacute;ximo passo</div>
           <div class="traco"></div>
         </div>
       </div>
       <div class="linha-preencher">
         <div class="campo">
-          <div class="rotulo">O que voce precisa providenciar</div>
+          <div class="rotulo">O que voc&ecirc; precisa providenciar</div>
           <div class="traco"></div>
         </div>
       </div>
@@ -395,12 +381,29 @@ def montar_html(chave, area):
       <div class="linha">{escritorio}</div>
       <div class="linha">{endereco}</div>
       <div class="linha">{contato}</div>
-      <div class="aviso">Ficou com duvida sobre alguma fase? Fale com a gente pelo WhatsApp do escritorio.</div>
+      <div class="aviso">Ficou com d&uacute;vida sobre alguma fase? Fale com a gente pelo WhatsApp do escrit&oacute;rio.</div>
     </div>
   </div>
 </body>
 </html>
-""".format(
+"""
+
+
+def _fase_html(indice, nome, texto):
+    return (
+        '      <li data-n="{n}">\n'
+        '        <span class="marcador"></span>\n'
+        '        <p class="fase-nome">{nome}</p>\n'
+        '        <p class="fase-texto">{texto}</p>\n'
+        '      </li>'
+    ).format(n=indice, nome=html.escape(nome), texto=html.escape(texto))
+
+
+def montar_html(area):
+    fases = '\n'.join(
+        _fase_html(i, nome, texto) for i, (nome, texto) in enumerate(area['fases'], start=1)
+    )
+    return MODELO.format(
         css=CSS,
         escritorio=html.escape(ESCRITORIO),
         titulo=html.escape(area['titulo']),
@@ -414,11 +417,10 @@ def montar_html(chave, area):
 
 
 def gerar(chave):
-    area = AREAS[chave]
     os.makedirs(SAIDA, exist_ok=True)
     destino = os.path.join(SAIDA, 'mapa_processo_{}.html'.format(chave))
     with open(destino, 'w', encoding='utf-8') as arquivo:
-        arquivo.write(montar_html(chave, area))
+        arquivo.write(montar_html(AREAS[chave]))
     return destino
 
 
@@ -433,8 +435,7 @@ def main():
     if not args.area and not args.todas:
         parser.error('informe a area ou use --todas. Areas: ' + ', '.join(sorted(AREAS)))
 
-    chaves = sorted(AREAS) if args.todas else [args.area]
-    for chave in chaves:
+    for chave in (sorted(AREAS) if args.todas else [args.area]):
         caminho = gerar(chave)
         print('Mapa gerado: {} ({} fases)'.format(caminho, len(AREAS[chave]['fases'])))
     print('Imprima em A4 retrato. Marque a fase atual a mao antes de entregar ao cliente.')

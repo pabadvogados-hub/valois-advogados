@@ -30,6 +30,12 @@ Ver `agentes_claude/GUIA_INSTALACAO_CLAUDE_AI.md`.
 | FINANCEIRO | Fechamento, conciliacao Asaas x ADVBOX, cobranca com lembretes | `python FINANCEIRO/fechamento_mensal.py MM/YYYY` |
 | OPERACIONAL | Tarefas, processos, prazos, pecas; agente VALOIS.IA (webhook) | `python OPERACIONAL/main.py tarefas` |
 | SYNC | Docs assinados ZapSign -> Drive | `python SYNC/sync_assinados.py` |
+| RELATORIO AO CLIENTE | Relatorio mensal de cada processo, com audio, para revisao do advogado | `python OPERACIONAL/relatorio_mensal.py --exemplo` |
+| MAPA DO PROCESSO | Mapa impresso das fases, por area, para entregar ao cliente | `python UTILS/mapa_do_processo.py previdenciario` |
+
+## Procedimentos (docs/POPs/)
+Os POPs do escritorio estao em `docs/POPs/`: uso da IA pela equipe, mapa do processo, audiencia,
+atendimento no WhatsApp e relatorio mensal. As automacoes acima seguem esses procedimentos.
 
 > Credenciais (ADVBOX, Asaas, ZapSign, Google, WhatsApp) ainda NAO foram recebidas - chegam em canal seguro apos a
 > assinatura do contrato. Ate la rodam apenas os agentes de IA sobre documentos soltos. Ver `docs/ONBOARDING.md`.

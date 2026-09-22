@@ -35,3 +35,13 @@ Thumbs.db
 
 # Material interno do provedor (briefing/onboarding) - nao versionar no repo do cliente
 _briefing/
+
+# Saidas com DADO DE CLIENTE - nunca versionar (repositorio publico)
+SAIDA/
+CADASTROS/*
+!CADASTROS/.gitkeep
+DOCS_MODELOS/*
+!DOCS_MODELOS/.gitkeep
+BASE_CONHECIMENTO/*
+!BASE_CONHECIMENTO/.gitkeep
+*.mp3

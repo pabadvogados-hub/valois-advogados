@@ -27,6 +27,8 @@ VALOIS_ADVOGADOS/
 ├── FINANCEIRO/           # fechamento, conciliacao Asaas x ADVBOX, cobranca (lembretes 10/5/3/2 dias + dia)
 ├── OPERACIONAL/          # tarefas, processos, prazos, pecas; agente VALOIS.IA (webhook FastAPI)
 ├── SYNC/                 # docs assinados ZapSign -> Drive
+├── SAIDA/                # relatorios e mapas gerados (NAO versionado - dado de cliente)
+├── docs/POPs/            # procedimentos do escritorio (uso da IA, mapa, audiencia, WhatsApp, relatorio)
 ├── DOCS_MODELOS/         # timbrado + pecas-modelo REAIS do escritorio (aguardando)
 ├── CADASTROS/ BASE_CONHECIMENTO/ UTILS/
 ├── config/               # .env (nao versionar), equipe.py, regras_financeiras.py, timbrado_modelo.docx
@@ -51,6 +53,20 @@ Gestao: principal Welington; secundarios Kauã (Iuna), Gisele (Ibatiba), Priscil
 Fluxo: analise do caso -> OCR do documento -> pasta do cliente (3 subpastas) -> Ficha (documento guia) ->
 Contrato -> Procuracao -> Declaracao de Hipossuficiencia -> ZapSign -> WhatsApp -> cadastro ADVBOX -> sync de assinados.
 Honorarios: previdenciario e no exito (parcelas fixas apos a concessao); demais areas conforme contrato.
+
+## Relatorio mensal ao cliente (POP 05)
+`python OPERACIONAL/relatorio_mensal.py` — gera, em lote, o relatorio de situacao processual de
+todo processo ativo do ADVBOX: texto em linguagem do dia a dia + **audio** explicando a fase
+(edge-tts, voz pt-BR). Sai em `SAIDA/relatorios/AAAA-MM/<CLIENTE>/` com um `INDICE_PARA_REVISAO.csv`.
+
+**Nao envia nada sozinho.** O advogado da area revisa, assina a coluna `revisado_por` e marca
+`enviar=SIM`; so entao `--enviar` dispara pela Evolution API. O envio para se faltar revisor ou
+se sobrar `[PREENCHER]` no texto.
+
+- `--exemplo` roda com dados ficticios, sem tocar no ADVBOX (serve para demonstrar)
+- `--responsavel PRISCILA` | `--mes 09/2026` | `--sem-audio`
+- Prazo do POP: ate o 5o dia util de cada mes. Disparo em LOTE, nao cliente a cliente.
+- `SAIDA/` e gitignored: contem nome e telefone de cliente e este repositorio e publico.
 
 ## Squad Financeiro (FINANCEIRO)
 `python FINANCEIRO/fechamento_mensal.py MM/YYYY`

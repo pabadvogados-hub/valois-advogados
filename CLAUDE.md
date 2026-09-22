@@ -75,6 +75,21 @@ Honorarios: previdenciario e no exito (parcelas fixas apos a concessao); demais 
 
 Piloto de WhatsApp: numero do previdenciario (28) 99940-2133.
 
+## Confirmado na reunião gravada de 14/09/2026
+- **Previdenciario ajuiza na COMARCA LOCAL (competencia delegada), nao na Justica Federal.** A Federal
+  so entra em grau de recurso. Sao duas comarcas locais (confirmar quais no kickoff). Os juizes locais
+  conhecem a realidade dos agricultores da regiao.
+- **Portal de autoatendimento nao serve para o publico previdenciario dele** (rural, pouca familiaridade
+  com tecnologia: "se eu pedir para mandar uma foto, ele nao manda"). O canal e WhatsApp + relatorio
+  explicado em linguagem simples.
+- **A automacao roda na maquina do escritorio**, nao em VPS nossa ("faco tudo na sua maquina").
+- **Relatorio mensal e disparado em lote**, nao cliente a cliente. Horario do relatorio do INSS e
+  configuravel (ele cogitou 6h, nao so 8h).
+- **Implantacao em 3 fases** (reunioes de 2h, uma por semana): plugar tudo -> banco de teses -> produzir
+  peca; treinamento geral depois. ~3 semanas.
+- **KPIs que ele quer do ADVBOX:** tempo medio de processo, ticket medio, processos ativos e encerrados.
+- Origem: reuniao de apresentacao de 14/09/2026 (gravacao transcrita).
+
 ## Regras que a IA nunca ignora
 - Beneficio por incapacidade: laudo medico com menos de 60 dias e descricao da CID.
 - BPC/LOAS: renda per capita inferior a 1/4 do salario minimo, laudo medico atualizado e cadastro no CRAS/CadUnico atualizado.
